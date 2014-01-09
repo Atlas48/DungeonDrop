@@ -1,5 +1,6 @@
-    #This script allows channel operators to add annotations to the Eggdrop logfile via the party line.
-	#Perfect if you want to make some changes.
+#Type:    
+#This script allows channel operators to add annotations to the Eggdrop logfile via the party line.
+#Perfect if you want to make some changes.
     if {[catch {source scripts/note.tcl>} err} {
             putlog "Error while loading note.tcl: $err"
     } else {
