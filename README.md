@@ -11,5 +11,5 @@ TO DO:
 
 -   Think of ideas for scripts
 -   Get some scripts coded
-
+-   Write down ideas for scripts in this readme
 ***
