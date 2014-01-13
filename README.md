@@ -10,9 +10,9 @@ This requires [SQLite.](https://sqlite.org/ "To the website")
 TO DO:
 ------
 
--   Think of ideas for scripts
--   Get some scripts coded
--   Write down ideas for scripts in this readme
+- [ ]  Think of ideas for scripts
+- [ ]  Get some scripts coded
+- [ ]  Write down ideas for scripts in this readme
 *****
 Extended login script
 ---------------------
