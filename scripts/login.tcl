@@ -8,10 +8,24 @@ package require sqlite
             putlog "login.tcl loaded without errors"
     }
 	
-	sqlite db1 ~/sql/database
+        sqlite db1 ~/sql/database1.sqlite
+        db1 eval{CREATE TABLE IF NOT EXISTS db1.usersheet
+        (
+        ID int(255)
+        Adventurer varchar(255)
+        Race varchar(255)
+        bio varchar(255)
+        catchprase varchar(255)
+        STR int(255)
+        DEX int(255)
+        CON int(255)
+        WIZ int(255)
+        CHA int(255)
+        )
+        }
 	bind join * * joinup
 	procname joinup {
-	 db1 eval{ 
+         
 	 
 	 }
 	}
