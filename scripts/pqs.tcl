@@ -112,7 +112,7 @@ namespace eval pubqsys {
 	# example : {#chan1 #chan2 #chan3} or {#chan1}
 	# beware, if the chan's name contains any } or {, you must replace it by
 	# \} or \{. example : if your chan is #my{chan}, replace by #my\{chan\}.
-  variable allowed_chans {#yourchan}
+  variable allowed_chans {$chan}
 
 
   #### PUBLIC COMMANDS AND AUTHORIZATIONS
