@@ -5,29 +5,33 @@ A set of scripts (a script pack with some hand-crafted additions) for the eggdro
 (This is essentially a patch)
 
 **This is currently WIP  and not functional.**
-This requires [SQLite.](https://sqlite.org/ "To the website")
+This requires [SQLite.](https://sqlite.org/ "To their website")
 ***
 TO DO:
 ------
 
 - [ ]  Think of ideas for scripts
 - [ ]  Get some scripts coded
-- [ ]  Write down ideas for scripts in this readme
+- [x]  Write down ideas for scripts in this readme
 *****
 Extended login script
 ---------------------
-Adds extended login support from the eggdrop userfile sceme (think of it like nickserv)
-**WORK IN PROGRESS**
+Adds extended login support from the eggdrop userfile sceme (think of it like nickserv, but with added database)
+**[WORK IN PROGRESS]**
 
 *****
 File system
 -----------
-Adds a file sharing directory and access to it with 
+Adds a file sharing directory and access to it with the bot.
 (see help.txt for more info)
-**PREMADE**
+**[PREMADE]**
 *****
 Public Quotes System (PQS)
 --------------------------
 Adds quite a user-frendly interface to manage channel quotes
-**PREMADE**
+**[PREMADE]**
 *****
+Medium script
+-------------
+Allows you to issue commands thuogh the bot and annotate the log file
+**[WORK IN PROGRESS]**
