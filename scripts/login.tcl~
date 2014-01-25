@@ -1,6 +1,6 @@
 # This is heavaly work in progress
 # This is meant to extend eggdrop's login feature 
-# and by that, this will create a full d20-esque character sheet for all your needs
+# and by that, this will create
 # This involves SQLite. A lot.
 package require sqlite 
     if {[catch {source scripts/login.tcl>} err} {
