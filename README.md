@@ -72,3 +72,6 @@ Medium script
 Allows you to talk though the bot and annotate the log files.
 **[WORK IN PROGRESS]**
 >>>>>>> 4cc7bf9145b28be16ecef6baeed27762a9c80d39
+
+***
+
