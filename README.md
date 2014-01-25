@@ -16,7 +16,8 @@ TO DO:
 *****
 Extended login script
 ---------------------
-Adds extended login support from the eggdrop userfile sceme (think of it like nickserv, but with added database and more similarity to dungeons and dragons)
+Adds extended login support from the eggdrop userfile sceme (think of it like nickserv, but with added databa
+se and more similarity to dungeons and dragons)
 **[WORK IN PROGRESS]**
 
 *****
