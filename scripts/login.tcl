@@ -10,6 +10,7 @@ package require sqlite
     }
 namespace{
 
+
 }
 	
 sqlite db1 ~/sql/database1.sqlite
@@ -19,7 +20,7 @@ db1 eval{CREATE TABLE IF NOT EXISTS db1.usersheet
         	Adventurer varchar(255)
         	Race varchar(255)
         	bio varchar(255)
-        	catchprase varchar(255)
+        	Catchphrase varchar(255)
         	STR int(255)
         	DEX int(255)
         	CON int(255)
@@ -29,6 +30,7 @@ db1 eval{CREATE TABLE IF NOT EXISTS db1.usersheet
         }
 	bind join * * joinup
 	procname joinup { nick hand idx chan }
+	
+	proc joinup {
+	
 	}
-	proc joinup
-
