@@ -32,7 +32,3 @@ Public Quotes System (PQS)
 Adds quite a user-frendly interface to manage channel quotes
 **[PREMADE]**
 *****
-Medium script
--------------
-Allows you to issue commands thuogh the bot and annotate the log file
-**[WORK IN PROGRESS]**
