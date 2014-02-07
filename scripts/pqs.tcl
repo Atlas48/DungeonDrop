@@ -260,7 +260,7 @@ namespace eval pubqsys {
   bind evnt - prerehash pubqsys::uninstall 
   bind time - "[lindex $pubqsys::backuptime 1] [lindex $pubqsys::backuptime 0] * * *" pubqsys::backup_db
   proc uninstall {args} {
-		putlog "Désallocation des ressources de \002Public Quotes System...\002"
+		putlog "Deallocation of resources \ 002 Public Quotes System ... \ 002"
 	  unbind pub $pubqsys::quoteauth $pubqsys::quotecmd pubqsys::quote
   	unbind pub $pubqsys::addquoteauth $pubqsys::addquotecmd pubqsys::addquote
   	unbind pub $pubqsys::quoteinfoauth $pubqsys::quoteinfocmd pubqsys::quoteinfo
