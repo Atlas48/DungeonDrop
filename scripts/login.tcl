@@ -19,7 +19,7 @@ db1 eval{CREATE TABLE IF NOT EXISTS db1.usersheet
         	ID int(255)
         	Adventurer varchar(255)
         	Race varchar(255)
-        	bio varchar(255)
+        	Bio varchar(255)
         	Catchphrase varchar(255)
         	STR int(255)
         	DEX int(255)
