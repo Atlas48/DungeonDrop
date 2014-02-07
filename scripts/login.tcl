@@ -18,7 +18,7 @@ variable login::lookup ""
 	sqlite db1 ~/sql/database
 	
         sqlite db1 ~/sql/database1.sqlite
-        db1 eval{CREATE TABLE IF NOT EXISTS db1.usersheet
+        db1 eval {CREATE TABLE IF NOT EXISTS db1.usersheet
         (
         ID int(255)
         Adventurer varchar(255)
@@ -33,10 +33,11 @@ variable login::lookup ""
         )
         }
 	bind join * * joinup
-	procname joinup {
-         
+        procname joinup {#Note: 
+          if {db1 exists {SELECT $placeholder FROM Adventurer} == true} {
+
+          }
 	 
-	 }
-	}
+	 }   
 	
 
