@@ -33,10 +33,12 @@ variable login::lookup ""
         )
         }
 	bind join * * joinup
-        procname joinup {#Note: 
+        procname joinup {} { #Note: Find out how joins are handled
           if {db1 exists {SELECT $placeholder FROM Adventurer} == true} {
 
-          }
+          } else {
+		  
+		  }
 	 
 	 }   
 	
