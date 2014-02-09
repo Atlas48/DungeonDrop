@@ -29,14 +29,16 @@ variable login::lookup ""
         DEX int(255)
         CON int(255)
         WIZ int(255)
-        CHA int(255)
+        CHA int(255)x
         )
         }
 	bind join * * joinup
-        procname joinup {#Note: 
-          if {db1 exists {SELECT $placeholder FROM Adventurer} == true} {
-
-          }
+       procname joinup {nick hand idx chan} {
+          if {db1 exists {SELECT $nick FROM Adventurer} == true} {
+	  puthelp "PRVMSG: Welcome back $nick"
+	  puthelp "$nick has joined!"
+	  chattr $nick +v chan
+          } else {
 	 
 	 }   
 	
