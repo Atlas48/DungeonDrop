@@ -5,7 +5,9 @@ package require sqlite
 
 namespace eval login{
 #command used to lookup entries
-variable login::lookup ""
+variable login::lookup "!lookup"
+#command used to edit entries
+variable login::set "!set"
 
 }
    
@@ -23,6 +25,7 @@ variable login::lookup ""
         ID int(255)
         Adventurer varchar(255)
         Race varchar(255)
+		Class varchar(255)
         Bio varchar(255)
         Catchprase varchar(255)
         STR int(255)
@@ -33,22 +36,15 @@ variable login::lookup ""
         )
         }
 	bind join * * joinup
-<<<<<<< HEAD
-        procname joinup {} { #Note: Find out how joins are handled
-          if {db1 exists {SELECT $placeholder FROM Adventurer} == true} {
-
-          } else {
-		  
-		  }
-=======
-       procname joinup {nick hand idx chan} {
+       proc joinup {nick hand idx chan} {
           if {db1 exists {SELECT $nick FROM Adventurer} == true} {
-	  puthelp "PRVMSG: Welcome back $nick"
-	  puthelp "$nick has joined!"
-	  chattr $nick +v chan
-          } else {
->>>>>>> 7c761c68c29dfafa8b6a4b93f8d1927eb2618e14
+			puthelp "PRVMSG: Welcome back $nick"
+			puthelp "$nick has joined!"
+			chattr $nick +v $chan
+          } 
+		  else {
+			
 	 
-	 }   
+			}   
+	}
 	
-
