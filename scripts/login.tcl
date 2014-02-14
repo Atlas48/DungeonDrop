@@ -16,33 +16,48 @@ variable login::lookup ""
     }
 	
 	sqlite db1 ~/sql/database
+<<<<<<< HEAD
 	bind join * * joinup
 	procname joinup {
 	 db1 eval{ 
 	 
 	 }
 	}
+=======
+>>>>>>> origin/dev
 	
         sqlite db1 ~/sql/database1.sqlite
-        db1 eval{CREATE TABLE IF NOT EXISTS db1.usersheet
+        db1 eval {CREATE TABLE IF NOT EXISTS db1.usersheet
         (
         ID int(255)
         Adventurer varchar(255)
         Race varchar(255)
-        bio varchar(255)
-        catchprase varchar(255)
+        Bio varchar(255)
+        Catchprase varchar(255)
         STR int(255)
         DEX int(255)
         CON int(255)
         WIZ int(255)
-        CHA int(255)
+        CHA int(255)x
         )
         }
 	bind join * * joinup
-	procname joinup {
-         
+<<<<<<< HEAD
+        procname joinup {} { #Note: Find out how joins are handled
+          if {db1 exists {SELECT $placeholder FROM Adventurer} == true} {
+
+          } else {
+		  
+		  }
+=======
+       procname joinup {nick hand idx chan} {
+          if {db1 exists {SELECT $nick FROM Adventurer} == true} {
+	  puthelp "PRVMSG: Welcome back $nick"
+	  puthelp "$nick has joined!"
+	  chattr $nick +v chan
+          } else {
+>>>>>>> 7c761c68c29dfafa8b6a4b93f8d1927eb2618e14
 	 
-	 }
-	}
+	 }   
 	
 
