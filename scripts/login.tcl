@@ -8,7 +8,8 @@ namespace eval login{
 variable login::lookup "!lookup"
 #command used to edit entries
 variable login::set "!set"
-
+#command used to register entries
+variable login::register
 }
    
    if {[catch {source scripts/login.tcl>} err} {
@@ -32,19 +33,21 @@ variable login::set "!set"
         DEX int(255)
         CON int(255)
         WIZ int(255)
-        CHA int(255)x
+        CHA int(255)
         )
         }
 	bind join * * joinup
        proc joinup {nick hand idx chan} {
           if {db1 exists {SELECT $nick FROM Adventurer} == true} {
-			puthelp "PRVMSG: Welcome back $nick"
-			puthelp "$nick has joined!"
+			puthelp "PRVMSG $nick: Welcome back $nick"
+			puthelp "PRVMSG $chan: $nick has joined!"
 			chattr $nick +v $chan
           } 
 		  else {
-			
-	 
+			puthelp "PRVMSG $chan : A new player has joined, $nick! Now play nice..."
+			puthelp "PRVMSG $nick : Welcome $nick, I am $botnick, and welcome to $chan"
+			puthelp "PRVMSG $nick : Type $login::register [YourNick] to register"
+			puthelp "PRVMSG $nick : "
 			}   
 	}
 	
