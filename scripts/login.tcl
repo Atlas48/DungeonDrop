@@ -4,12 +4,22 @@
 package require sqlite 
 
 namespace eval login{
-#command used to lookup entries
+
+#Command used to lookup entries via message-
 variable login::lookup "!lookup"
-#command used to edit entries
+#Authorization for the command-
+variable login::lookupauth ""
+
+#Command used to edit entries-
 variable login::set "!set"
-#command used to register entries
-variable login::register
+#Authorization for the command-
+variable login::setauth ""
+
+#Command used to register entries-
+variable login::register "!register"
+#Authorization for the command-
+variable login::registerauth ""
+
 }
    
    if {[catch {source scripts/login.tcl>} err} {
@@ -37,6 +47,7 @@ variable login::register
         )
         }
 	bind join * * joinup
+	bind msg login::re
        proc joinup {nick hand idx chan} {
           if {db1 exists {SELECT $nick FROM Adventurer} == true} {
 			puthelp "PRVMSG $nick: Welcome back $nick"
