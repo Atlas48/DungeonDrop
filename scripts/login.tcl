@@ -3,7 +3,7 @@
 # This involves SQLite. A lot.
 package require sqlite 
 
-namespace eval login{
+namespace eval login {
 #command used to lookup entries
 variable login::lookup ""
 
@@ -16,15 +16,7 @@ variable login::lookup ""
     }
 	
 	sqlite db1 ~/sql/database
-<<<<<<< HEAD
-	bind join * * joinup
-	procname joinup {
-	 db1 eval{ 
-	 
-	 }
-	}
-=======
->>>>>>> origin/dev
+
 	
         sqlite db1 ~/sql/database1.sqlite
         db1 eval {CREATE TABLE IF NOT EXISTS db1.usersheet
@@ -42,21 +34,14 @@ variable login::lookup ""
         )
         }
 	bind join * * joinup
-<<<<<<< HEAD
-        procname joinup {} { #Note: Find out how joins are handled
-          if {db1 exists {SELECT $placeholder FROM Adventurer} == true} {
 
-          } else {
-		  
-		  }
-=======
        procname joinup {nick hand idx chan} {
           if {db1 exists {SELECT $nick FROM Adventurer} == true} {
 	  puthelp "PRVMSG: Welcome back $nick"
 	  puthelp "$nick has joined!"
 	  chattr $nick +v chan
           } else {
->>>>>>> 7c761c68c29dfafa8b6a4b93f8d1927eb2618e14
+
 	 
 	 }   
 	
