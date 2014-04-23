@@ -1,0 +1,3 @@
+language: tcl
+script: ./dependencies.yml
+
