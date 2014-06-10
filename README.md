@@ -5,6 +5,7 @@ A set of scripts (a script pack with some hand-crafted additions) for the eggdro
 (This is essentially a patch)
 
 *This is currently WIP  and not functional.*
+
 This requires [SQLite.](https://sqlite.org/ "To their website")
 
 *****
@@ -36,7 +37,7 @@ Adds quite a user-frendly and quite customizable interface to manage channel quo
 *****
 Medium script
 -------------
-Allows you to talk though the bot and annotate the log files.
+Allows you to annotate the log files.
 **[WORK IN PROGRESS]**
 
 *****

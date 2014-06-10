@@ -7,9 +7,11 @@
             putlog "note.tcl loaded without errors"
     }
 	
+namespace eval note{
+#placeholder
+}
 	set call *
-    bind dcc +0 note$call dcc:note
+    bind dcc +0 note $call dcc:note
     procname dcc:note{ hand idx text ){
     putlog "$call"
     }
-
