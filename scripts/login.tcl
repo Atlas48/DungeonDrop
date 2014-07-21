@@ -54,11 +54,11 @@ bind join * * joinup
        procname joinup {nick hand idx chan} {
           if {db1 exists {SELECT * FROM Adventurer WHERE Adventurer=$nick} == true} {
 	  puthelp "PRVMSG $nick: Welcome back $nick"
-	  puthelp "$nick has joined!"
+	  puthelp "PRVMSG $chan: $nick has joined!"
 	  chattr $nick +v chan
           } else {
 	 puthelp "PRVMSG $nick: Welcome, $nick. According to our Database, you haven't registered yet."
 	 puthelp "PRVMSG $nick: To register, type '/msg goruchwyliwr $login' "
          puthelp "PRVMSG $chan: We have a new member. $nick! Now be nice..."
 	 }   
-	
+          }
