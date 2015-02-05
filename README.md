@@ -1,4 +1,4 @@
-Goruchwyliwr
+DungeonDrop
 ============
 
 A set of scripts (a script pack with some hand-crafted additions) for the eggdrop IRC bot desinged for role-playing channels. To be added in to the "scripts" folder along with all the other stuff
