@@ -21,20 +21,6 @@ Extended login script
 Adds extended login support from the eggdrop userfile sceme (think of it like nickserv, but with added database)
 **[WORK IN PROGRESS]**
 
-
-*****
-File system
------------
-
-Adds a file sharing directory and access to it with the bot.
-(see help.txt for more info)
-*[PREMADE]*
-*****
-Public Quotes System (PQS)
---------------------------
-Adds quite a user-frendly and quite customizable interface to manage channel quotes
-*[PREMADE]*
-*****
 Medium script
 -------------
 Allows you to annotate the log files.
